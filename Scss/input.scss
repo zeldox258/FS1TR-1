@@ -1,0 +1,244 @@
+@use "sass:math";
+@import 'values';
+
+
+
+
+
+$primary-okkes : red;
+$primary-sergen : green;
+$primary-alp : yellow;
+
+
+@mixin flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+//Okkes
+.okkes{
+    background-color: white;
+    color: $primary-okkes;
+    @include flexContainer;
+    .sergen{
+        background-color: $primary-sergen;
+        @include flexContainer;
+        .alp{
+            background-color: $primary-alp;
+            @include flexContainer;
+            &:hover {
+                color: #FF0000;
+            }
+
+            &-1{
+                color:red
+            }
+            &-2{
+                color:green
+            }
+        }
+        &-2{
+            color:green
+        }
+    }
+
+    .omer{
+        @include flexContainer;
+    }
+}
+
+@function calcRem($pixel) {
+    @return math.div($pixel, 16);
+}
+
+
+.king{
+    background-color: red;
+    display: grid;
+    @include flexContainer;
+    font-size: calcRem(40);
+}
+
+
+
+.kingPlus{
+    @extend .king;
+    font-weight: 500;
+}
+
+$trueStatement : false;
+body{
+    @if $trueStatement {
+        background-color: yellow;
+    }
+    @else{
+        background-color: blue;
+    }
+}
+
+$list-length: 19;
+
+
+ul{
+  list-style: none;
+
+  @for $i from 1 through $list-length{
+
+    $id: "item-#{$i}"; // Define the ID based on the loop index
+
+    ##{$id} {
+        background-color: darken(#FF0000, 5% * $i);
+    }
+  }
+
+}
+
+ul {
+    list-style: none;
+  
+    @for $i from 1 through $list-length {
+      li:nth-child(#{$i}) {
+        background-color: darken(#FF0000, 5% * $i);
+      }
+    }
+  }
+
+
+
+
+
+
+
+/*OMER*/
+
+@function backGround($color){
+    @if ($color % 2 == 0){
+        @return yellow;
+    }
+    
+    @else {
+        @return black;
+    }
+}
+
+.omer{
+
+    background-color: backGround(121);
+    color: backGround(120);
+    
+
+}
+
+
+
+/*H.omer*/
+
+.HOMER{
+    ul{
+        @for $i from 1 through 10 {
+            li:nth-child(#{$i}) {
+
+                    background-color: backGround($i);
+            }
+          }
+    }
+    
+}
+
+
+
+/*ALP*/
+
+
+
+.ALP{
+    ul{
+        @for $i from 1 through 10 {
+            li:nth-child(#{$i}) {
+                @if ($i%2==0) {
+                    background-color: red;
+                }
+                @else{
+                    background-color: white;
+                } 
+            }
+          }
+    }
+    
+}
+
+
+
+
+
+
+/*OKKES*/
+
+@function setWidthAndHeight($prop,$type){
+    @if($type=="width"){
+        @return $prop + 20px;
+    }
+    @else{
+        @return $prop - 20px;
+    }
+}
+
+
+.okkesFunction{
+    width: setWidthAndHeight(500,"width");
+}
+
+
+/*SERGEN*/
+@function calcMath($num){
+    @if $num <= 100{
+        @return 0;
+    }
+    @else if $num < 500 & $num > 100 {
+        @return $num - 100;
+    }
+    @else if $num > 500 & $num < 1000 {
+        @return $num + 100;
+    }
+    @else{
+        @return 1000;
+    }
+}
+
+
+@mixin decides{
+    $tempValue : calcMath(50);
+    @if $tempValue > 700 {
+        width: $tempValue+"px";
+    }
+    @else if $tempValue < 350 {
+        height: $tempValue+"px";
+    }
+    @else {
+        font-size: $tempValue+"px";
+    }
+}
+
+.sergen1 {
+    @include decides;
+}
+.sergen2 {
+    @extend .sergen1;
+   
+}
+
+.sergen3{
+    @extend .sergen2;
+        
+}
+
+/*
+
+npm install -g sass
+sass input.scss output.css
+sass --watch input.scss:output.css
+
+*/

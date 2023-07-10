@@ -1,0 +1,265 @@
+.okkes {
+  background-color: white;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.okkes .sergen {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.okkes .sergen .alp {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.okkes .sergen .alp:hover {
+  color: #FF0000;
+}
+.okkes .sergen .alp-1 {
+  color: red;
+}
+.okkes .sergen .alp-2 {
+  color: green;
+}
+.okkes .sergen-2 {
+  color: green;
+}
+.okkes .omer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.king, .kingPlus {
+  background-color: red;
+  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5;
+}
+
+.kingPlus {
+  font-weight: 500;
+}
+
+body {
+  background-color: blue;
+}
+
+ul {
+  list-style: none;
+}
+ul #item-1 {
+  background-color: #e60000;
+}
+ul #item-2 {
+  background-color: #cc0000;
+}
+ul #item-3 {
+  background-color: #b30000;
+}
+ul #item-4 {
+  background-color: #990000;
+}
+ul #item-5 {
+  background-color: maroon;
+}
+ul #item-6 {
+  background-color: #660000;
+}
+ul #item-7 {
+  background-color: #4d0000;
+}
+ul #item-8 {
+  background-color: #330000;
+}
+ul #item-9 {
+  background-color: #1a0000;
+}
+ul #item-10 {
+  background-color: black;
+}
+ul #item-11 {
+  background-color: black;
+}
+ul #item-12 {
+  background-color: black;
+}
+ul #item-13 {
+  background-color: black;
+}
+ul #item-14 {
+  background-color: black;
+}
+ul #item-15 {
+  background-color: black;
+}
+ul #item-16 {
+  background-color: black;
+}
+ul #item-17 {
+  background-color: black;
+}
+ul #item-18 {
+  background-color: black;
+}
+ul #item-19 {
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+ul li:nth-child(1) {
+  background-color: #e60000;
+}
+ul li:nth-child(2) {
+  background-color: #cc0000;
+}
+ul li:nth-child(3) {
+  background-color: #b30000;
+}
+ul li:nth-child(4) {
+  background-color: #990000;
+}
+ul li:nth-child(5) {
+  background-color: maroon;
+}
+ul li:nth-child(6) {
+  background-color: #660000;
+}
+ul li:nth-child(7) {
+  background-color: #4d0000;
+}
+ul li:nth-child(8) {
+  background-color: #330000;
+}
+ul li:nth-child(9) {
+  background-color: #1a0000;
+}
+ul li:nth-child(10) {
+  background-color: black;
+}
+ul li:nth-child(11) {
+  background-color: black;
+}
+ul li:nth-child(12) {
+  background-color: black;
+}
+ul li:nth-child(13) {
+  background-color: black;
+}
+ul li:nth-child(14) {
+  background-color: black;
+}
+ul li:nth-child(15) {
+  background-color: black;
+}
+ul li:nth-child(16) {
+  background-color: black;
+}
+ul li:nth-child(17) {
+  background-color: black;
+}
+ul li:nth-child(18) {
+  background-color: black;
+}
+ul li:nth-child(19) {
+  background-color: black;
+}
+
+/*OMER*/
+.omer {
+  background-color: black;
+  color: yellow;
+}
+
+/*H.omer*/
+.HOMER ul li:nth-child(1) {
+  background-color: black;
+}
+.HOMER ul li:nth-child(2) {
+  background-color: yellow;
+}
+.HOMER ul li:nth-child(3) {
+  background-color: black;
+}
+.HOMER ul li:nth-child(4) {
+  background-color: yellow;
+}
+.HOMER ul li:nth-child(5) {
+  background-color: black;
+}
+.HOMER ul li:nth-child(6) {
+  background-color: yellow;
+}
+.HOMER ul li:nth-child(7) {
+  background-color: black;
+}
+.HOMER ul li:nth-child(8) {
+  background-color: yellow;
+}
+.HOMER ul li:nth-child(9) {
+  background-color: black;
+}
+.HOMER ul li:nth-child(10) {
+  background-color: yellow;
+}
+
+/*ALP*/
+.ALP ul li:nth-child(1) {
+  background-color: white;
+}
+.ALP ul li:nth-child(2) {
+  background-color: red;
+}
+.ALP ul li:nth-child(3) {
+  background-color: white;
+}
+.ALP ul li:nth-child(4) {
+  background-color: red;
+}
+.ALP ul li:nth-child(5) {
+  background-color: white;
+}
+.ALP ul li:nth-child(6) {
+  background-color: red;
+}
+.ALP ul li:nth-child(7) {
+  background-color: white;
+}
+.ALP ul li:nth-child(8) {
+  background-color: red;
+}
+.ALP ul li:nth-child(9) {
+  background-color: white;
+}
+.ALP ul li:nth-child(10) {
+  background-color: red;
+}
+
+/*OKKES*/
+.okkesFunction {
+  width: 520px;
+}
+
+/*SERGEN*/
+.sergen1, .sergen2, .sergen3 {
+  height: "0px";
+}
+
+/*
+
+npm install -g sass
+sass input.scss output.css
+sass --watch input.scss:output.css
+
+*/
+
+/*# sourceMappingURL=output.css.map */
