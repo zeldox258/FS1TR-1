@@ -1,0 +1,17 @@
+{
+    "title": "Random JSON Data",
+    "description": "This is an example of random JSON data.",
+    "value": 42,
+    "isAwesome": true,
+    "tags": [
+      "random",
+      "example",
+      "JSON",
+      "data"
+    ],
+    "nestedObject": {
+      "foo": "bar",
+      "baz": "qux"
+    }
+}
+  
